@@ -32,4 +32,4 @@ read -p "Paste Here: " CRP
 su - aunglay -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n'
 printf 'Your SUDO Pasword Is aunglay \n'
-printf 'This is my account www.facebook.com/aungmyozaw123'
+printf 'This is my account www.facebook.com/aungmyozaw123 \n'
