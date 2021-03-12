@@ -1,5 +1,5 @@
 #! /bin/bash
-printf "This script modify by Aung Myo Zaw.This is not my script crd to owner. " >&2
+printf "This script modify by Aung Myo Zaw.This is not my script crd to owner : " >&2
 {
 sudo useradd -m aunglay
 sudo adduser aunglay sudo
