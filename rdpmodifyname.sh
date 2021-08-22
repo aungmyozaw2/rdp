@@ -1,9 +1,11 @@
 #! /bin/bash
+read -p "what is your username : " username
+read -p "what is your password : " passwd
 printf "This script modify by Aung Myo Zaw.This is not my script crd to owner wait for download \n " >&2
 {
-sudo useradd -m aunglay1
-sudo adduser aunglay1 sudo
-echo 'aunglay1:aunglay1' | sudo chpasswd
+sudo useradd -m $username
+sudo adduser $username sudo
+echo '$username:$passwd' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -24,13 +26,13 @@ sudo apt install nautilus nano -y
 sudo apt install xfce4-terminal -y
 sudo apt -y install obs-studio
 sudo apt -y install firefox
-sudo adduser aunglay1 chrome-remote-desktop
+sudo adduser $username chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Completed " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
 read -p "Paste Here: " CRP
-su - aunglay1 -c """$CRP"""
+su - $username -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n'
-printf 'Your SUDO Pasword Is aunglay1 \n'
+printf 'Your SUDO Pasword Is $username \n'
 printf 'This is my account www.facebook.com/aungmyozaw123 \n'
