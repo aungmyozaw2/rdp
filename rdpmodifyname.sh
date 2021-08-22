@@ -34,5 +34,5 @@ printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - $username -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n'
-printf 'Your SUDO Pasword Is $username \n'
+printf 'Your SUDO Pasword Is $passwd \n'
 printf 'This is my account www.facebook.com/aungmyozaw123 \n'
